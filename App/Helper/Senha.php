@@ -11,5 +11,9 @@ namespace App\Helper;
 
 class Senha
 {
+    static public function gerar($senha)
+    {
+        return md5($senha);
+    }
 
 }

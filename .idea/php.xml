@@ -2,13 +2,8 @@
 <project version="4">
   <component name="PhpIncludePathManager">
     <include_path>
-<<<<<<< HEAD
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/twbs/bootstrap" />
-=======
-      <path value="$PROJECT_DIR$/vendor/twbs/bootstrap" />
-      <path value="$PROJECT_DIR$/vendor/composer" />
->>>>>>> e6c7bbf23ec53ce610c73a312c4bbff74d8961c3
     </include_path>
   </component>
 </project>
