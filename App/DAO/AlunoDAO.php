@@ -86,6 +86,22 @@ class AlunoDAO extends Conexao
 
     }
 
+    public function pesquisaNome ($aluno){
+
+        $sql= "select * from alunos where nome = :nome";
+        try{
+            $c=$this->conexao->prepare($sql);
+            $c->bindValue(":nome", "%" .$aluno->getDescricao()."%");
+            $c->execute();
+            return $c->fetchAll(\PDO::FETCH_CLASS, "\APP\Model\Produto");
+        }catch (\PDOException $e){
+            echo "<div class='alert alert-danger'>{$e->getMessage()}</div>";
+
+        }
+
+
+    }
+
 
 
 }
