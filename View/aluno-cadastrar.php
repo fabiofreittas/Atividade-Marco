@@ -4,7 +4,7 @@ include 'cabecalho.php';?>
 
 <h1>Cadastrar Novos Alunos</h1>
 
-<?php
+<?php /*
 if ($_POST){
     include '../vendor/autoload.php';
     $u = new \App\Model\Usuario();
@@ -20,7 +20,7 @@ if ($_POST){
 
 
 
-<?php
+<?php */
 include '../vendor/autoload.php';
 if ($_POST){
     $p = new \App\Model\Aluno();
@@ -30,7 +30,7 @@ if ($_POST){
     !empty($_POST['endereco']) ? $p->setEndereco($_POST{'endereco'}) : $p->setEndereco(null);
     $p->setEmail($_POST['email']);
 
-    $p->setNascimento($_POST['datanasc']);
+    $p->setNascimento (\App\Helper\Data::set($_POST {'datanasc'}));
 
     $pDAO = new \App\DAO\AlunoDAO();
     if ($pDAO->cadastrar($p))

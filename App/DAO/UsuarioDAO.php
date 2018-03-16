@@ -45,4 +45,22 @@ class UsuarioDAO extends Conexao
         header("Location: login.php");
     }
 
+
+    public function alterarUsuario($usuario){
+
+        $sql="update usuarios set email=:email, senha=:senha where id=:id";
+        try{
+            $c=$this->conexao->prepare($sql);
+            $c->bindValue(":email", $usuario->getEmail());
+            $c->bindValue(":senha",\App\Helper\Senha::gerar($usuario->getSenha()));
+            $c->bindValue(":id", $usuario->getId());
+            $c->execute();
+            return true;
+
+        }catch (\PDOException $e){
+            echo "<div class='alert alert-danger'>{$e->getMessage()}</div>";
+
+        }
+    }
+
 }
