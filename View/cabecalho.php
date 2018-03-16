@@ -14,9 +14,9 @@
 
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav">
-                <li class="nav-item"><a href="#" class="nav-link">Alunos</a></li>
                 <li class="nav-item"><a href="aluno-cadastrar.php" class="nav-link">Cadastrar Aluno</a></li>
                 <li class="nav-item"><a href="aluno-pesquisar.php" class="nav-link">Pesquisar Aluno</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Alterar Senha</a></li>
             </ul>
         </div>
         <a class="navbar-brand" href="#">Sair</a>
