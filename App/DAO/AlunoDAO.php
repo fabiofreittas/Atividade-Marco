@@ -86,7 +86,7 @@ class AlunoDAO extends Conexao
 
     }
 
-    public function pesquisaNome ($aluno){
+    public function pesquisaNome ($aluno=null){
 
         $sql= "select * from alunos where nome = :nome";
         try{

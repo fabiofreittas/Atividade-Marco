@@ -14,12 +14,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AlunoDAO.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AlunoDAO.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/App/DAO/AlunoDAO.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="459">
+              <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+              <folding>
+                <marker date="1521165599051" expanded="true" signature="204:340" ph="insert into alunos... " />
+                <marker date="1521165599051" expanded="true" signature="1002:1115" ph="update alunos... " />
+                <marker date="1521165599051" expanded="true" signature="1824:1855" ph="delete from alunos... " />
+                <marker date="1521165599051" expanded="true" signature="2206:2239" ph="select * fro... alunos" />
+                <marker date="1521165599051" expanded="true" signature="2624:2663" ph="select * fro... alunos" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,7 +50,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="aluno-pesquisar.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="aluno-pesquisar.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/View/aluno-pesquisar.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="595">
@@ -108,6 +114,7 @@
         <option value="$PROJECT_DIR$/View/cabecalho.php" />
         <option value="$PROJECT_DIR$/App/Helper/Data.php" />
         <option value="$PROJECT_DIR$/View/aluno-cadastrar.php" />
+        <option value="$PROJECT_DIR$/App/DAO/AlunoDAO.php" />
       </list>
     </option>
   </component>
@@ -223,12 +230,12 @@
       <option name="presentableId" value="Default" />
       <updated>1521157334612</updated>
       <workItem from="1521157336253" duration="4002000" />
-      <workItem from="1521161629257" duration="796000" />
+      <workItem from="1521161629257" duration="2635000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4798000" />
+    <option name="totallyTimeSpent" value="6637000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -283,7 +290,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1521165599051" expanded="true" signature="204:340" ph="insert into alunos... " />
+            <marker date="1521165599051" expanded="true" signature="1002:1115" ph="update alunos... " />
+            <marker date="1521165599051" expanded="true" signature="1824:1855" ph="delete from alunos... " />
+            <marker date="1521165599051" expanded="true" signature="2206:2239" ph="select * fro... alunos" />
+            <marker date="1521165599051" expanded="true" signature="2624:2663" ph="select * fro... alunos" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -376,14 +389,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/DAO/AlunoDAO.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/Model/Aluno.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -413,6 +418,20 @@
         <state relative-caret-position="595">
           <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/DAO/AlunoDAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding>
+            <marker date="1521165599051" expanded="true" signature="204:340" ph="insert into alunos... " />
+            <marker date="1521165599051" expanded="true" signature="1002:1115" ph="update alunos... " />
+            <marker date="1521165599051" expanded="true" signature="1824:1855" ph="delete from alunos... " />
+            <marker date="1521165599051" expanded="true" signature="2206:2239" ph="select * fro... alunos" />
+            <marker date="1521165599051" expanded="true" signature="2624:2663" ph="select * fro... alunos" />
+          </folding>
         </state>
       </provider>
     </entry>
