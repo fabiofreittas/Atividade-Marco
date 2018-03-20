@@ -22,7 +22,6 @@ $a = new \App\Model\Aluno();
 isset($_GET['nome']) ? $a->setNome($_GET['nome']) : $a->setNome("");
 $aDAO = new \App\DAO\AlunoDAO();
 $alunos = $aDAO->pesquisarNome($a);
-/*if (count($alunos) > 0){*/
 ?>
 <table class='table table-striped table-hover'>
     <tr class='text-center'>
@@ -46,19 +45,8 @@ $alunos = $aDAO->pesquisarNome($a);
         echo "<td>{$aluno->getEndereco()}</td>";
         echo "<td>{$aluno->getEmail()}</td>";
         echo "<td class='text-center'>".\App\Helper\Data::get($aluno->getNascimento())."</td>";
-        /*
-        echo "<td class='text-center'>".\App\Helper\Moeda::get($produto->getQuantidade())."</td>";
-        echo "<td class='text-center'>".\App\Helper\Moeda::get($produto->getValor())."</td>";
-        echo "<td class='text-center'>".\App\Helper\Data::get($produto->getValidade())."</td>";
 
-        echo "<td><a class='btn btn-warning' href='produto-alterar.php?id={$produto->getId()}'>Alterar</a></td>";
-        echo "<td><a class='btn btn-danger' href='produto-excluir.php?id={$produto->getId()}'>Excluir</a></td>";
-        echo "</tr>";*/
     }
     ?>
 </table>
-    <?php
-/*} else {
-    echo "<div class='alert alert-danger'>Resultados esperados não encontrados!</div>";
-}
-?>*/
+
