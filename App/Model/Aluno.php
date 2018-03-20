@@ -1,13 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: 00120911205
- * Date: 08/03/2018
- * Time: 20:01
- */
-
 namespace App\Model;
-
 
 class Aluno
 {

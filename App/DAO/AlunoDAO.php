@@ -88,12 +88,12 @@ class AlunoDAO extends Conexao
 
     public function pesquisaNome ($aluno=null){
 
-        $sql= "select * from alunos where nome = :nome";
+        $sql= "select * from alunos where nome like :nome";
         try{
             $c=$this->conexao->prepare($sql);
-            $c->bindValue(":nome", "%" .$aluno->getDescricao()."%");
+            $c->bindValue(":nome", "%" .$aluno->getNome()."%");
             $c->execute();
-            return $c->fetchAll(\PDO::FETCH_CLASS, "\APP\Model\Produto");
+            return $c->fetchAll(\PDO::FETCH_CLASS, "\APP\Model\Aluno");
         }catch (\PDOException $e){
             echo "<div class='alert alert-danger'>{$e->getMessage()}</div>";
 
