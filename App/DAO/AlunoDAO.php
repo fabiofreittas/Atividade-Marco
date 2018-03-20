@@ -34,7 +34,7 @@ class AlunoDAO extends Conexao
     }
 
     public function alterar($aluno){
-        $sql="update alunos set nome=:nome, serie=:serie, endereco=:endereco, email=:email, nascimento=:nascimento where id=:id";
+        $sql="update alunos set nome=:nome, serie=:serie, telefone=:telefone, endereco=:endereco, email=:email, nascimento=:nascimento where id=:id";
         try{
             $c=$this->conexao->prepare($sql);
             $c->bindValue(":nome", $aluno->getNome());
