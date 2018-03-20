@@ -14,6 +14,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
+=======
+      <file leaf-file-name="AlunoDAO.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/App/DAO/AlunoDAO.php">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="459">
+              <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+              <folding>
+                <marker date="1521165599051" expanded="true" signature="204:340" ph="insert into alunos... " />
+                <marker date="1521165599051" expanded="true" signature="1002:1115" ph="update alunos... " />
+                <marker date="1521165599051" expanded="true" signature="1824:1855" ph="delete from alunos... " />
+                <marker date="1521165599051" expanded="true" signature="2206:2239" ph="select * fro... alunos" />
+                <marker date="1521165599051" expanded="true" signature="2624:2663" ph="select * fro... alunos" />
+=======
+            <state relative-caret-position="1105">
+              <caret line="88" column="47" lean-forward="true" selection-start-line="88" selection-start-column="47" selection-end-line="88" selection-end-column="47" />
+              <folding>
+                <marker date="1521165490365" expanded="true" signature="204:340" ph="insert into alunos... " />
+                <marker date="1521165490365" expanded="true" signature="1002:1115" ph="update alunos... " />
+                <marker date="1521165490365" expanded="true" signature="1824:1855" ph="delete from alunos... " />
+                <marker date="1521165490365" expanded="true" signature="2206:2239" ph="select * fro... alunos" />
+                <marker date="1521165490365" expanded="true" signature="2624:2663" ph="select * fro... alunos" />
+>>>>>>> d2400bd82865476600f0f87357f13982428a580b
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+>>>>>>> b41322b80fd961afd0c72c00dde237f54562a271
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/View/index.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -81,10 +111,14 @@
         <option value="$PROJECT_DIR$/View/index.php" />
         <option value="$PROJECT_DIR$/App/Helper/Data.php" />
         <option value="$PROJECT_DIR$/View/aluno-cadastrar.php" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/App/DAO/AlunoDAO.php" />
+=======
         <option value="$PROJECT_DIR$/View/cabecalho.php" />
         <option value="$PROJECT_DIR$/App/Model/Aluno.php" />
         <option value="$PROJECT_DIR$/App/DAO/AlunoDAO.php" />
         <option value="$PROJECT_DIR$/View/aluno-pesquisar.php" />
+>>>>>>> d2400bd82865476600f0f87357f13982428a580b
       </list>
     </option>
   </component>
@@ -195,14 +229,29 @@
       <option name="presentableId" value="Default" />
       <updated>1521157334612</updated>
       <workItem from="1521157336253" duration="4002000" />
+<<<<<<< HEAD
+      <workItem from="1521161629257" duration="2635000" />
+=======
       <workItem from="1521161629257" duration="796000" />
       <workItem from="1521162607905" duration="2892000" />
+<<<<<<< HEAD
       <workItem from="1521502227155" duration="2147000" />
+=======
+>>>>>>> d2400bd82865476600f0f87357f13982428a580b
+>>>>>>> b41322b80fd961afd0c72c00dde237f54562a271
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="9837000" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="6637000" />
+=======
+    <option name="totallyTimeSpent" value="7690000" />
+>>>>>>> d2400bd82865476600f0f87357f13982428a580b
+>>>>>>> b41322b80fd961afd0c72c00dde237f54562a271
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -320,11 +369,27 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+<<<<<<< HEAD
             <marker date="1521503358339" expanded="true" signature="204:340" ph="insert into alunos... " />
             <marker date="1521503358339" expanded="true" signature="1002:1115" ph="update alunos... " />
             <marker date="1521503358339" expanded="true" signature="1824:1855" ph="delete from alunos... " />
             <marker date="1521503358339" expanded="true" signature="2206:2239" ph="select * fro... alunos" />
             <marker date="1521503358339" expanded="true" signature="2624:2666" ph="select * fro... alunos" />
+=======
+<<<<<<< HEAD
+            <marker date="1521165599051" expanded="true" signature="204:340" ph="insert into alunos... " />
+            <marker date="1521165599051" expanded="true" signature="1002:1115" ph="update alunos... " />
+            <marker date="1521165599051" expanded="true" signature="1824:1855" ph="delete from alunos... " />
+            <marker date="1521165599051" expanded="true" signature="2206:2239" ph="select * fro... alunos" />
+            <marker date="1521165599051" expanded="true" signature="2624:2663" ph="select * fro... alunos" />
+          </folding>
+=======
+            <marker date="1521165490365" expanded="true" signature="204:340" ph="insert into alunos... " />
+            <marker date="1521165490365" expanded="true" signature="1002:1115" ph="update alunos... " />
+            <marker date="1521165490365" expanded="true" signature="1824:1855" ph="delete from alunos... " />
+            <marker date="1521165490365" expanded="true" signature="2206:2239" ph="select * fro... alunos" />
+            <marker date="1521165490365" expanded="true" signature="2624:2663" ph="select * fro... alunos" />
+>>>>>>> b41322b80fd961afd0c72c00dde237f54562a271
           </folding>
         </state>
       </provider>
@@ -358,6 +423,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+>>>>>>> d2400bd82865476600f0f87357f13982428a580b
         </state>
       </provider>
     </entry>
@@ -473,8 +539,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Model/Aluno.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="238">
           <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="27" />
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="21" />
+=======
+        <state relative-caret-position="289">
+          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+>>>>>>> d2400bd82865476600f0f87357f13982428a580b
+>>>>>>> b41322b80fd961afd0c72c00dde237f54562a271
           <folding />
         </state>
       </provider>
@@ -530,6 +606,20 @@
         <state relative-caret-position="306">
           <caret line="18" column="47" lean-forward="false" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/DAO/AlunoDAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding>
+            <marker date="1521165599051" expanded="true" signature="204:340" ph="insert into alunos... " />
+            <marker date="1521165599051" expanded="true" signature="1002:1115" ph="update alunos... " />
+            <marker date="1521165599051" expanded="true" signature="1824:1855" ph="delete from alunos... " />
+            <marker date="1521165599051" expanded="true" signature="2206:2239" ph="select * fro... alunos" />
+            <marker date="1521165599051" expanded="true" signature="2624:2663" ph="select * fro... alunos" />
+          </folding>
         </state>
       </provider>
     </entry>
