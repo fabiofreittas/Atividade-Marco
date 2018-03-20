@@ -49,10 +49,10 @@ if ($_GET) {
             echo "<td class='text-center'>" . \App\Helper\Data::get($aluno->getNascimento()) . "</td>";
 
 
-            /*echo "<td><a class='btn btn-warning' href='aluno-alterar.php?id={$aluno->getId()}'>Alterar</a></td>";
-            echo "<td><a class='btn btn-danger' href='aluno-excluir.php?id={$produto->getId()}'>Excluir</a></td>";
+            echo "<td><a class='btn btn-warning' href='aluno-alterar.php?id={$aluno->getId()}'>Alterar</a></td>";
+            echo "<td><a class='btn btn-danger' href='aluno-excluir.php?id={$aluno->getId()}'>Excluir</a></td>";
             echo "</tr>";
-            */
+
         }
         ?>
     </table>
