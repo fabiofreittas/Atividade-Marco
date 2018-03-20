@@ -18,8 +18,6 @@ if ($_POST){
 }
 ?>
 
-
-
 <?php */
 include '../vendor/autoload.php';
 if ($_POST){
@@ -29,7 +27,6 @@ if ($_POST){
     $p->setTelefone($_POST['telefone']);
     !empty($_POST['endereco']) ? $p->setEndereco($_POST{'endereco'}) : $p->setEndereco(null);
     $p->setEmail($_POST['email']);
-
     $p->setNascimento (\App\Helper\Data::set($_POST {'datanasc'}));
 
     $pDAO = new \App\DAO\AlunoDAO();

@@ -1,6 +1,6 @@
 <?php
 
-$titulo="Alterar Aluno";
+$titulo="Alteração de Aluno";
 include 'cabecalho.php';
 include '../vendor/autoload.php';
 
@@ -18,14 +18,14 @@ if ($_POST) {
     $a->setTelefone($_POST['telefone']);
     $a->setEndereco($_POST['endereco']);
     $a->setEmail($_POST['email']);
-    !empty($_POST['datanasc']) ? $a->setNascimento(\App\Helper\Data::set($_POST['datanasc'])) : $a->setNascimento(null);
+    !empty($_POST{'datanasc'}) ? $a->setNascimento(\App\Helper\Data::set($_POST{'datanasc'})) : $a->setNascimento(null);
 
     $aDAO = new \App\DAO\AlunoDAO();
     if ($aDAO->alterar($a))
-        header("Location: aluno-pesquisar.php?");
+        header("Location: aluno-pesquisar.php");
 }
 
-$alu= new \App\Model\Aluno();
+$alu = new \App\Model\Aluno();
 isset($_GET) ? $alu->setId($_GET['id']) : $alu->setId($_POST['id']) ;
 
 $aluDAO = new \App\DAO\AlunoDAO();
@@ -60,13 +60,8 @@ $resultado = $aluDAO->pesquisar($alu);
     <div class="form-group">
         Os campos com <span class="text-danger">*</span> não podem estar em branco.
     </div>
-
-
-
-
-
     <button type="submit" class="btn btn-success">
-        <img src="Images/ic_done_white_24px.svg" alt="Cadastrar Aluno"> Cadastrar
+        <img src="Images/ic_done_white_24px.svg" alt="Cadastrar Aluno"> Alterar
     </button>
 </form>
 <?php include 'rodape.php';?>

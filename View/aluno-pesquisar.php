@@ -37,29 +37,31 @@ if ($_GET) {
             <th></th>
             <th></th>
         </tr>
-        <?php
-        foreach ($alunos as $aluno) {
-            echo "<tr>";
-            echo "<td class='text-center'>{$aluno->getId()}</td>";
-            echo "<td>{$aluno->getNome()}</td>";
-            echo "<td>{$aluno->getSerie()}</td>";
-            echo "<td>{$aluno->getTelefone()}</td>";
-            echo "<td>{$aluno->getEndereco()}</td>";
-            echo "<td>{$aluno->getEmail()}</td>";
-            echo "<td class='text-center'>" . \App\Helper\Data::get($aluno->getNascimento()) . "</td>";
+<?php
+    foreach ($alunos as $aluno) {
+        echo "<tr>";
+        echo "<td class='text-center'>{$aluno->getId()}</td>";
+        echo "<td>{$aluno->getNome()}</td>";
+        echo "<td>{$aluno->getSerie()}</td>";
+        echo "<td>{$aluno->getTelefone()}</td>";
+        echo "<td>{$aluno->getEndereco()}</td>";
+        echo "<td>{$aluno->getEmail()}</td>";
+        echo "<td class='text-center'>" . \App\Helper\Data::get($aluno->getNascimento()) . "</td>";
 
 
-            echo "<td><a class='btn btn-warning' href='aluno-alterar.php?id={$aluno->getId()}'>Alterar</a></td>";
-            echo "<td><a class='btn btn-danger' href='aluno-excluir.php?id={$aluno->getId()}'>Excluir</a></td>";
-            echo "</tr>";
+        echo "<td><a class='btn btn-warning' href='aluno-alterar.php?id={$aluno->getId()}'>Alterar</a></td>";
+        echo "<td><a class='btn btn-danger' href='aluno-excluir.php?id={$aluno->getId()}'>Excluir</a></td>";
+        echo "</tr>";
 
-        }
-        ?>
+    }
+?>
     </table>
-    <?php
+<?php
 
-} else {
-    echo "<div class='alert alert-danger'>Resultados esperados não encontrados!</div>";
 }
+
+/*else {
+    echo "<div class='alert alert-danger'>Resultados esperados não encontrados!</div>";
+}*/
 ?>
 
