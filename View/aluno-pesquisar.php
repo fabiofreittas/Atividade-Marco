@@ -1,5 +1,4 @@
 <?php
-
 $titulo="Pesquisar Alunos";
 include 'cabecalho.php';?>
 <h1>Pesquisar Cadastro de Alunos</h1>
@@ -18,13 +17,23 @@ include 'cabecalho.php';?>
 </form>
 
 <?php
-include '../vendor/autoload.php';
-$a = new \App\Model\Aluno();
-isset($_GET['nome']) ? $a->setNome($_GET['nome']) : $a->setNome("");
-if ($_GET) {
-    $aDAO = new \App\DAO\AlunoDAO();
-    $alunos = $aDAO->pesquisaNome($a);
-?>
+    include '../vendor/autoload.php';
+    $uDAO = new \App\DAO\UsuarioDAO();
+    $uDAO->verificar();
+
+    /*if ($_GET['msg']==1)
+        echo "<div class='alert alert-success'>Cadastro alterado com sucesso!</div>";
+
+    if ($_GET['msg']==2)
+        echo "<div class='alert alert-success'>Cadastro excluído com sucesso!</div>";
+    */
+
+    $a = new \App\Model\Aluno();
+    isset($_GET['nome']) ? $a->setNome($_GET['nome']) : $a->setNome("");
+    if ($_GET) {
+        $aDAO = new \App\DAO\AlunoDAO();
+        $alunos = $aDAO->pesquisaNome($a);
+    ?>
     <table class='table table-striped table-hover'>
         <tr class='text-center'>
             <th>ID</th>
@@ -47,21 +56,17 @@ if ($_GET) {
         echo "<td>{$aluno->getEndereco()}</td>";
         echo "<td>{$aluno->getEmail()}</td>";
         echo "<td class='text-center'>" . \App\Helper\Data::get($aluno->getNascimento()) . "</td>";
-
-
         echo "<td><a class='btn btn-warning' href='aluno-alterar.php?id={$aluno->getId()}'>Alterar</a></td>";
         echo "<td><a class='btn btn-danger' href='aluno-excluir.php?id={$aluno->getId()}'>Excluir</a></td>";
         echo "</tr>";
-
     }
 ?>
     </table>
 <?php
-
 }
 
-/*else {
+/* else {
     echo "<div class='alert alert-danger'>Resultados esperados não encontrados!</div>";
-}*/
-?>
+}
+?>*/
 

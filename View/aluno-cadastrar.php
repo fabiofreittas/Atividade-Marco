@@ -1,25 +1,11 @@
 <?php
 $titulo="Cadastrar Aluno";
 include 'cabecalho.php';?>
-
 <h1>Cadastrar Novos Alunos</h1>
-
-<?php /*
-if ($_POST){
-    include '../vendor/autoload.php';
-    $u = new \App\Model\Usuario();
-    $u->setCpf($_POST['cpf']);
-    $u->setSenha($_POST['senha']);
-    $uDAO = new \App\DAO\UsuarioDAO();
-    if ($uDAO->logar($u))
-        header("Location: aluno-pesquisar.php");
-    else
-        echo "<div class='alert-danger'>Dados incorretos!</div>";
-}
-?>
-
-<?php */
+<?php
 include '../vendor/autoload.php';
+$uDAO = new \App\DAO\UsuarioDAO();
+$uDAO->verificar();
 if ($_POST){
     $p = new \App\Model\Aluno();
     !empty($_POST['nome']) ? $p->setNome($_POST{'nome'}) : $p->setNome(null);
@@ -65,5 +51,8 @@ if ($_POST){
     <button type="submit" class="btn btn-success">
         <img src="Images/ic_done_white_24px.svg" alt="Cadastrar Aluno"> Cadastrar
     </button>
+
 </form>
-<?php include 'rodape.php';?>
+<?php
+include 'rodape.php';
+?>

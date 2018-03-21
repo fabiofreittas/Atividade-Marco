@@ -10,15 +10,17 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.php">Login</a>
+        <a class="navbar-brand" href="login.php">Login</a>
 
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav">
                 <li class="nav-item"><a href="aluno-cadastrar.php" class="nav-link">Cadastrar Aluno</a></li>
                 <li class="nav-item"><a href="aluno-pesquisar.php" class="nav-link">Pesquisar Aluno</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Alterar Senha</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Gerenciar Usuário</a></li>
             </ul>
         </div>
-        <a class="navbar-brand" href="#">Sair</a>
+
+        <a class="navbar-brand" href="logoff.php">Sair</a>
+
     </nav>
     <div class="container">

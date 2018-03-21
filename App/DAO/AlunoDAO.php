@@ -76,8 +76,7 @@ class AlunoDAO extends Conexao
             $c=$this->conexao->prepare($sql);
             $c->bindValue("id", $aluno->getId());
             $c->execute();
-            return $c->fetch(\PDO::FETCH_CLASS);
-
+            return $c->fetch(\PDO::FETCH_ASSOC);
 
         }catch (\PDOException $e){
             echo "<div class='alert alert-danger'>{$e->getMessage()}</div>";
