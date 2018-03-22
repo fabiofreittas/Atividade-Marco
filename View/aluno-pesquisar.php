@@ -8,7 +8,7 @@ include 'cabecalho.php';?>
         <label for="nome">Nome: </label>
     </div>
     <div class="form-group mx-sm-3 mb-2">
-        <input type="text" class="form-control" id="nome" name="nome" placeholder="Ex.: Fábio Freitas" autofocus>
+        <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome do aluno" autofocus>
     </div>
     <button type="submit" class="btn btn-primary mb-2">
         <img src="Images/ic_search_white_24px.svg" alt="Pesquisar">

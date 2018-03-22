@@ -9,10 +9,8 @@
 namespace App\DAO;
 
 
-class UsuarioDAO extends Conexao
-{
+class UsuarioDAO extends Conexao {
     public function logar($usuario){
-
         $sql="select * from usuarios where cpf=:cpf and senha=:senha";
         try{
             $c=$this->conexao->prepare($sql);
@@ -21,46 +19,47 @@ class UsuarioDAO extends Conexao
             $c->execute();
             $resultado=$c->fetch();
             session_start();
-            $_SESSION["id"]=$resultado["id"];
+            $_SESSION["cpf"]=$resultado["cpf"];
             return $resultado;
-
-
         }catch (\PDOException $e){
             echo "<div class='alert alert-danger'>{$e->getMessage()}</div>";
-
         }
-
-
     }
 
     public function verificar(){
-
         session_start();
-        if(empty($_SESSION['id']))header("Location: login.php");
+        if(empty($_SESSION['cpf']))header("Location: login.php");
     }
 
     public function deslogar(){
         session_start();
-        unset($_SESSION ['id']); session_destroy();
+        unset($_SESSION ['cpf']); session_destroy();
         header("Location: login.php");
     }
 
-
     public function alterarUsuario($usuario){
-
-        $sql="update usuarios set email=:email, senha=:senha where id=:id";
+        $sql="update usuarios set cpf=:cpf, senha=:senha where cpf=:cpf";
         try{
             $c=$this->conexao->prepare($sql);
-            $c->bindValue(":email", $usuario->getEmail());
+            $c->bindValue(":cpf", $usuario->getcpf());
             $c->bindValue(":senha",\App\Helper\Senha::gerar($usuario->getSenha()));
-            $c->bindValue(":id", $usuario->getId());
             $c->execute();
             return true;
-
         }catch (\PDOException $e){
             echo "<div class='alert alert-danger'>{$e->getMessage()}</div>";
-
         }
     }
 
+    /*public function pesquisar($usuario){
+        $sql="select * from usuarios where cpf=:cpf";
+        try{
+            $c=$this->conexao->prepare($sql);
+            $c->bindValue("cpf", $usuario->getCpf());
+            $c->execute();
+            return $c->fetch(\PDO::FETCH_ASSOC);
+
+        }catch (\PDOException $e){
+            echo "<div class='alert alert-danger'>{$e->getMessage()}</div>";
+        }
+    }*/
 }
