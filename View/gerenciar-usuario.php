@@ -1,5 +1,6 @@
 <?php
 $titulo="Alteração de Usuário";
+$menu = true;
 include 'cabecalho.php';
 include '../vendor/autoload.php';
 $uDAO = new \App\DAO\UsuarioDAO();
@@ -10,10 +11,9 @@ if ($_POST) {
     $a->setCpf($_POST['cpf']);
     !empty($_POST{'senha'}) ? $a->setSenha(\App\Helper\Senha::gerar($_POST{'senha'})) : $a->setSenha(null);
     $aDAO = new \App\DAO\UsuarioDAO();
-    if ($aDAO->alterarUsuario($a)->deslogar($a))
+    if ($aDAO->alterarUsuario($a))
         header("Location:index.php");
 }
-
 ?>
 <form action="gerenciar-usuario.php" method="post">
     <div class="form-group">

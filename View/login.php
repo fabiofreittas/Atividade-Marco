@@ -11,8 +11,7 @@
 <div class="container">
     <h1>Controle de Acesso - Sistema de Gerenciamento de Alunos</h1>
     <?php
-
-    if ($_POST){
+     if ($_POST){
         include '../vendor/autoload.php';
         $u = new \App\Model\Usuario();
         $u->setCpf($_POST['cpf']);
@@ -27,11 +26,12 @@
     <form action="login.php" method="post">
         <div class="form-group">
             <label for="cpf">CPF</label>
-            <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF!" class="form-control">
+            <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" class="form-control">
         </div>
+
         <div class="form-group">
-            <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha" class="form-control">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" class="form-control" placeholder="Digite sua senha">
         </div>
         <input type="submit" value="Logar" class="btn btn-success col-12">
     </form>

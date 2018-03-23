@@ -1,10 +1,11 @@
 <?php
 $titulo="Pesquisar Alunos";
+$menu = true;
 include 'cabecalho.php';?>
 <h1>Pesquisar Cadastro de Alunos</h1>
 <br>
 <form class="form-inline" action="aluno-pesquisar.php" method="get">
-    <div class="form-group">
+    <div class="form-inline">
         <label for="nome">Nome: </label>
     </div>
     <div class="form-group mx-sm-3 mb-2">
@@ -20,14 +21,6 @@ include 'cabecalho.php';?>
     include '../vendor/autoload.php';
     $uDAO = new \App\DAO\UsuarioDAO();
     $uDAO->verificar();
-
-    /*if ($_GET['msg']==1)
-        echo "<div class='alert alert-success'>Cadastro alterado com sucesso!</div>";
-
-    if ($_GET['msg']==2)
-        echo "<div class='alert alert-success'>Cadastro excluído com sucesso!</div>";
-    */
-
     $a = new \App\Model\Aluno();
     isset($_GET['nome']) ? $a->setNome($_GET['nome']) : $a->setNome("");
     if ($_GET) {
@@ -64,9 +57,3 @@ include 'cabecalho.php';?>
     </table>
 <?php
 }
-
-/* else {
-    echo "<div class='alert alert-danger'>Resultados esperados não encontrados!</div>";
-}
-?>*/
-

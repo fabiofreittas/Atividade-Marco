@@ -9,9 +9,7 @@
 namespace App\DAO;
 
 
-class AlunoDAO extends Conexao
-{
-
+class AlunoDAO extends Conexao {
     public function cadastrar($aluno) {
         $sql="insert into alunos(nome, serie, telefone, endereco, email, nascimento) values (:nome, :serie, :telefone, :endereco, :email, :nascimento)";
         try{
@@ -25,12 +23,9 @@ class AlunoDAO extends Conexao
             $c->execute();
             return true;
 
-
         }catch (\PDOException $e){
             echo "<div class='alert alert-danger'>{$e->getMessage()}</div>";
-
         }
-
     }
 
     public function alterar($aluno){
@@ -47,10 +42,8 @@ class AlunoDAO extends Conexao
             $c->execute();
             return true;
 
-
         }catch (\PDOException $e){
             echo "<div class='alert alert-danger'>{$e->getMessage()}</div>";
-
         }
     }
 
@@ -61,12 +54,8 @@ class AlunoDAO extends Conexao
             $c->bindValue(":id", $aluno->getId());
             $c->execute();
             return true;
-
-
         }catch (\PDOException $e){
             echo "<div class='alert alert-danger'>{$e->getMessage()}</div>";
-
-
         }
     }
 
@@ -80,13 +69,10 @@ class AlunoDAO extends Conexao
 
         }catch (\PDOException $e){
             echo "<div class='alert alert-danger'>{$e->getMessage()}</div>";
-
         }
-
     }
 
     public function pesquisaNome ($aluno=null){
-
         $sql= "select * from alunos where nome like :nome";
         try{
             $c=$this->conexao->prepare($sql);
@@ -95,12 +81,6 @@ class AlunoDAO extends Conexao
             return $c->fetchAll(\PDO::FETCH_CLASS, "\APP\Model\Aluno");
         }catch (\PDOException $e){
             echo "<div class='alert alert-danger'>{$e->getMessage()}</div>";
-
         }
-
-
     }
-
-
-
 }

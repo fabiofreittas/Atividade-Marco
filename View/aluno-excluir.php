@@ -1,5 +1,6 @@
 <?php
 $titulo="Excluir Aluno";
+$menu = true;
 include 'cabecalho.php';
 include '../Vendor/autoload.php';
 $uDAO = new \App\DAO\UsuarioDAO();

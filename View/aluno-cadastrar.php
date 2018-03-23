@@ -1,5 +1,6 @@
 <?php
 $titulo="Cadastrar Aluno";
+$menu = true;
 include 'cabecalho.php';?>
 <h1>Cadastrar Novos Alunos</h1>
 <?php

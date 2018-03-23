@@ -1,6 +1,7 @@
 <?php
 
 $titulo="Alteração de Aluno";
+$menu = true;
 include 'cabecalho.php';
 include '../vendor/autoload.php';
 $uDAO = new \App\DAO\UsuarioDAO();

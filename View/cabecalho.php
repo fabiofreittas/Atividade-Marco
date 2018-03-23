@@ -9,18 +9,33 @@
     <title><?php echo $titulo; ?></title>
 </head>
 <body>
+
+    <?php
+        if ($menu == true){
+    ?>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="index.php">Home</a>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a href="login.php" class="nav-link">Login</a></li>
-                <li class="nav-item"><a href="aluno-cadastrar.php" class="nav-link">Cadastrar Aluno</a></li>
-                <li class="nav-item"><a href="aluno-pesquisar.php" class="nav-link">Pesquisar Aluno</a></li>
-                <li class="nav-item"><a href="gerenciar-usuario.php" class="nav-link">Gerenciar Usuário</a></li>
-            </ul>
-        </div>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="login.php" class="nav-link">Login</a></li>
+                    <li class="nav-item"><a href="aluno-cadastrar.php" class="nav-link">Cadastrar Aluno</a></li>
+                    <li class="nav-item"><a href="aluno-pesquisar.php" class="nav-link">Pesquisar Aluno</a></li>
+                    <li class="nav-item"><a href="gerenciar-usuario.php" class="nav-link">Gerenciar Usuário</a></li>
+                </ul>
+            </div>
 
         <a class="navbar-brand" href="logoff.php">Sair</a>
-
-    </nav>
+    <?php
+        } else {
+    ?>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.php">Home</a>
+            <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="login.php" class="nav-link">Login</a></li>
+            </ul>
+            </div>
+        </nav>
+        <?php } ?>
+        </nav>
     <div class="container">
