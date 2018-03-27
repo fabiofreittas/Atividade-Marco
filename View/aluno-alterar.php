@@ -53,7 +53,7 @@ $resultado = $aluDAO->pesquisar($alu);
     </div>
     <div class="form-group">
         <label for="datanasc"> Data de Nascimento </label>
-        <input type="text" id="datanasc" name="datanasc" class="form-control" value="<?php echo $resultado['nascimento'];?>">
+        <input type="text" id="datanasc" name="datanasc" class="form-control" value="<?php echo \App\Helper\Data::get($resultado['nascimento']);?>">
     </div>
     <div class="form-group">
         Os campos com <span class="text-danger">*</span> não podem estar em branco.
